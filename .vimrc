@@ -34,6 +34,9 @@ nnoremap <leader>t :CtrlPTag<CR>
 nnoremap <leader>m :e#<CR>
 nnoremap <leader>f :FZF<CR>
 nnoremap <leader>,f :Ag<CR>
+nnoremap <leader>,com :Commits
+nnoremap <leader>,gst :GFiles?<CR>
+" nnoremap <leader>,setup :NERDTreeToggle<CR>
 
 " let g:ctrlp_dont_split = 'nerdtree'
 
