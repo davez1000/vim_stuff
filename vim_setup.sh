@@ -3,6 +3,7 @@
 BASE=~
 BUNDLEDIR=$BASE/.vim/bundle
 AUTOLOADDIR=$BASE/.vim/autoload
+BACKUPDIR=$BASE/.vim/backups
 
 # Install some binaries
 brew update
@@ -11,6 +12,7 @@ brew install fzf
 
 mkdir -p $BUNDLEDIR
 mkdir -p $AUTOLOADDIR
+mkdir -p $BACKUPDIR
 
 PACKAGES=('tpope/vim-fugitive' 'junegunn/fzf.vim' 'junegunn/fzf' 'scrooloose/nerdtree' 'easymotion/vim-easymotion' 'vim-airline/vim-airline')
 
