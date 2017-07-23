@@ -42,6 +42,7 @@ let g:mapleader = ","
 
 nnoremap <leader>w :w!<CR>
 nnoremap <leader>nt :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
 " nnoremap <leader>f :CtrlP<CR>
 " nnoremap <leader>r :CtrlPMixed<CR>
 nnoremap <leader>w <C-W><C-W>
@@ -52,10 +53,14 @@ nnoremap <leader>,f :Ag<CR>
 nnoremap <leader>,com :Commits
 nnoremap <leader>,gst :GFiles?<CR>
 " nnoremap <leader>,setup :NERDTreeToggle<CR>
+nnoremap <leader>t :tabn<CR>
+nnoremap <leader>T :tabp<CR>
+nnoremap <leader>O :tabnew<CR>
 
 " let g:ctrlp_dont_split = 'nerdtree'
 
 let NERDTreeShowHidden = 1
+let NERDTreeIgnore = ['\.git$', '\.idea$']
 
 let g:ctrlp_custom_ignore = '\v[\/]vendor$'
 
@@ -69,4 +74,7 @@ set directory=/tmp
 set backupdir=~/.vim/backups/
 
 execute pathogen#infect()
+
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
