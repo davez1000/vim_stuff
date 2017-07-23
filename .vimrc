@@ -51,7 +51,7 @@ nnoremap <leader>m :e#<CR>
 nnoremap <leader>f :FZF<CR>
 nnoremap <leader>,f :Ag<CR>
 nnoremap <leader>,com :Commits
-nnoremap <leader>,gst :GFiles?<CR>
+nnoremap <leader>,gst :Gstatus<CR>
 " nnoremap <leader>,setup :NERDTreeToggle<CR>
 nnoremap <leader>t :tabn<CR>
 nnoremap <leader>T :tabp<CR>
