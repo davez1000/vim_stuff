@@ -61,6 +61,8 @@ nnoremap <leader>t :tabn<CR>
 nnoremap <leader>T :tabp<CR>
 nnoremap <leader>O :tabnew<CR>
 nnoremap <leader>q :q<CR>
+" Move current split pane into new tab.
+nnoremap <leader>,T <C-W><S-T>
 
 " let g:ctrlp_dont_split = 'nerdtree'
 
