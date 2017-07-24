@@ -50,6 +50,7 @@ nnoremap <leader>w <C-W><C-W>
 " nnoremap <leader>t :CtrlPTag<CR>
 nnoremap <leader>m :e#<CR>
 nnoremap <leader>f :FZF<CR>
+nnoremap <leader>r :BTags<CR>
 nnoremap <leader>,f :Ag<CR>
 nnoremap <leader>,com :Commits
 nnoremap <leader>,gst :Gstatus<CR>

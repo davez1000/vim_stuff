@@ -14,7 +14,7 @@ mkdir -p $BUNDLEDIR
 mkdir -p $AUTOLOADDIR
 mkdir -p $BACKUPDIR
 
-PACKAGES=('tpope/vim-fugitive' 'junegunn/fzf.vim' 'junegunn/fzf' 'scrooloose/nerdtree' 'easymotion/vim-easymotion' 'vim-airline/vim-airline')
+PACKAGES=('tpope/vim-fugitive' 'junegunn/fzf.vim' 'junegunn/fzf' 'scrooloose/nerdtree' 'easymotion/vim-easymotion' 'vim-airline/vim-airline' 'MattesGroeger/vim-bookmarks')
 
 git clone https://github.com/tpope/vim-pathogen && mv $BASE/vim-pathogen/autoload/pathogen.vim $AUTOLOADDIR && rm -rf $BASE/vim-pathogen
 
