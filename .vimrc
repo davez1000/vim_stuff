@@ -19,6 +19,7 @@ set hlsearch
 set ruler
 set encoding=utf-8
 set cursorline
+set nowrap
 
 " These are needed for vim airline to work
 set laststatus=2
@@ -59,6 +60,7 @@ nnoremap <leader>,pu :Gpush origin master
 nnoremap <leader>t :tabn<CR>
 nnoremap <leader>T :tabp<CR>
 nnoremap <leader>O :tabnew<CR>
+nnoremap <leader>q :q<CR>
 
 " let g:ctrlp_dont_split = 'nerdtree'
 
@@ -66,6 +68,12 @@ let NERDTreeShowHidden = 1
 let NERDTreeIgnore = ['\.git$', '\.idea$']
 
 let g:ctrlp_custom_ignore = '\v[\/]vendor$'
+
+" FZF open in tabs / splits etc.
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-h': 'split',
+  \ 'ctrl-v': 'vsplit' }
 
 let g:ctrlp_show_hidden = 1
 
