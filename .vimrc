@@ -2,6 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 syntax on
 
+set hidden
 set expandtab
 set tabstop=2
 set shiftwidth=2
