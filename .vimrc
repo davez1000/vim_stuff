@@ -20,6 +20,7 @@ set ruler
 set encoding=utf-8
 set cursorline
 set nowrap
+set relativenumber
 
 " These are needed for vim airline to work
 set laststatus=2
