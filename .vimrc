@@ -56,7 +56,7 @@ nnoremap <leader>r :BTags<CR>
 nnoremap <leader>,f :Ag<CR>
 nnoremap <leader>,com :Commits
 nnoremap <leader>,gst :Gstatus<CR>
-nnoremap <leader>,pu :Gpush origin master
+nnoremap <leader>,pu :Gpush
 " nnoremap <leader>,setup :NERDTreeToggle<CR>
 nnoremap <leader>t :tabn<CR>
 nnoremap <leader>T :tabp<CR>
