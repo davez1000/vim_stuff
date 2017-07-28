@@ -87,6 +87,8 @@ colorscheme horseradish256
 set directory=/tmp
 set backupdir=~/.vim/backups/
 
+let g:syntastic_php_phpcs_args = " --standard=Drupal --extensions=php,module,inc,install,test,profile,theme"
+
 execute pathogen#infect()
 
 " autocmd StdinReadPre * let s:std_in=1
