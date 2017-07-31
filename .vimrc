@@ -65,6 +65,9 @@ nnoremap <leader>q :q<CR>
 " Move current split pane into new tab.
 nnoremap <leader>,T <C-W><S-T>
 
+" CTAGS, pick instead of choosing first one
+nnoremap <C-]> g<C-]>
+
 " let g:ctrlp_dont_split = 'nerdtree'
 
 let NERDTreeShowHidden = 1
