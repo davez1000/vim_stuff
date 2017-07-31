@@ -51,9 +51,9 @@ nnoremap <leader>nf :NERDTreeFind<CR>
 nnoremap <leader>w <C-W><C-W>
 " nnoremap <leader>t :CtrlPTag<CR>
 nnoremap <leader>m :e#<CR>
-nnoremap <leader>f :FZF<CR>
+nnoremap <leader>f :FZF!<CR>
 nnoremap <leader>r :BTags<CR>
-nnoremap <leader>,f :Ag<CR>
+nnoremap <leader>,f :Ag!<CR>
 nnoremap <leader>,com :Commits
 nnoremap <leader>,gst :Gstatus<CR>
 nnoremap <leader>,pu :Gpush
@@ -91,6 +91,11 @@ set directory=/tmp
 set backupdir=~/.vim/backups/
 
 let g:syntastic_php_phpcs_args = " --standard=Drupal --extensions=php,module,inc,install,test,profile,theme"
+
+if executable('ag') 
+  set grepprg=ag\ --nogroup\ --nocolor\ --column
+  set grepformat=%f:%l:%c%m
+endif
 
 execute pathogen#infect()
 
