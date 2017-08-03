@@ -64,6 +64,8 @@ nnoremap <leader>O :tabnew<CR>
 nnoremap <leader>q :q<CR>
 " Move current split pane into new tab.
 nnoremap <leader>,T <C-W><S-T>
+" Rotate current pane
+nnoremap <leader>,* <C-W>r
 
 " CTAGS, pick instead of choosing first one
 nnoremap <C-]> g<C-]>
