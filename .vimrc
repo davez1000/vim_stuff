@@ -99,6 +99,16 @@ if executable('ag')
   set grepformat=%f:%l:%c%m
 endif
 
+" Toggle relative numbers if need be.
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set norelativenumber
+  else
+    set relativenumber
+  endif
+endfunc
+nnoremap <C-n> :call NumberToggle()<cr>
+
 execute pathogen#infect()
 
 " autocmd StdinReadPre * let s:std_in=1
