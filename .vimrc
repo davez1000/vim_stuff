@@ -70,6 +70,9 @@ nnoremap <leader>,* <C-W>r
 " CTAGS, pick instead of choosing first one
 nnoremap <C-]> g<C-]>
 
+" Reload .vimrc.
+nnoremap <C-S-R> :source $MYVIMRC<CR>
+
 " let g:ctrlp_dont_split = 'nerdtree'
 
 let NERDTreeShowHidden = 1
