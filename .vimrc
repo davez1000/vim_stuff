@@ -54,10 +54,10 @@ nnoremap <leader>m :e#<CR>
 nnoremap <leader>f :FZF!<CR>
 nnoremap <leader>r :BTags<CR>
 nnoremap <leader>,f :Ag!<CR>
-nnoremap :com :Commits
-nnoremap :gst :Gstatus
-nnoremap :gpu :Gpush
-nnoremap :dif :Gdiff
+" nnoremap :com :Commits
+" nnoremap :gst :Gstatus
+" nnoremap :gpu :Gpush
+" nnoremap :dif :Gdiff
 " nnoremap <leader>,setup :NERDTreeToggle<CR>
 nnoremap <leader>t :tabn<CR>
 nnoremap <leader>T :tabp<CR>
