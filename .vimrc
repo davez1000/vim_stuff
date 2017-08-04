@@ -54,9 +54,10 @@ nnoremap <leader>m :e#<CR>
 nnoremap <leader>f :FZF!<CR>
 nnoremap <leader>r :BTags<CR>
 nnoremap <leader>,f :Ag!<CR>
-nnoremap <leader>,com :Commits
-nnoremap <leader>,gst :Gstatus<CR>
-nnoremap <leader>,pu :Gpush
+nnoremap :com :Commits
+nnoremap :gst :Gstatus
+nnoremap :gpu :Gpush
+nnoremap :dif :Gdiff
 " nnoremap <leader>,setup :NERDTreeToggle<CR>
 nnoremap <leader>t :tabn<CR>
 nnoremap <leader>T :tabp<CR>
@@ -72,6 +73,9 @@ nnoremap <C-]> g<C-]>
 
 " Reload .vimrc.
 nnoremap <C-S-R> :source $MYVIMRC<CR>
+
+" Copy yanked text into command mode.
+cnoremap <leader>p <C-R>"
 
 " let g:ctrlp_dont_split = 'nerdtree'
 
