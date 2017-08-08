@@ -61,7 +61,7 @@ nnoremap <leader>,pu :Gpush
 nnoremap <leader>t :tabn<CR>
 nnoremap <leader>T :tabp<CR>
 nnoremap <leader>O :tabnew<CR>
-nnoremap <leader>q :q<CR>
+nnoremap <leader>q :q!<CR>
 " Move current split pane into new tab.
 nnoremap <leader>,T <C-W><S-T>
 " Rotate current pane
@@ -78,7 +78,7 @@ nnoremap <C-S-R> :source $MYVIMRC<CR>
 let NERDTreeShowHidden = 1
 let NERDTreeIgnore = ['\.git$', '\.idea$']
 
-let g:ctrlp_custom_ignore = '\v[\/]vendor$'
+" let g:ctrlp_custom_ignore = '\v[\/]vendor$'
 
 " FZF open in tabs / splits etc.
 let g:fzf_action = {
@@ -111,6 +111,8 @@ function! NumberToggle()
   endif
 endfunc
 nnoremap <C-n> :call NumberToggle()<cr>
+
+let NERDTreeShowLineNumbers=1
 
 execute pathogen#infect()
 
