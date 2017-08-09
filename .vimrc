@@ -67,6 +67,8 @@ nnoremap <leader>q :q!<CR>
 nnoremap <leader>,T <C-W><S-T>
 " Rotate current pane
 nnoremap <leader>,* <C-W>r
+" Remove highlighting from searches.
+nnoremap <leader>,n :noh<CR>
 
 " CTAGS, pick instead of choosing first one
 nnoremap <C-]> g<C-]>
