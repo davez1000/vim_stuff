@@ -70,6 +70,10 @@ nnoremap <leader>,* <C-W>r
 " Remove highlighting from searches.
 nnoremap <leader>,n :noh<CR>
 
+" Position NERDTree window width.
+nnoremap <leader>- <C-W><<CR>
+nnoremap <leader>= <C-W>><CR>
+
 " CTAGS, pick instead of choosing first one
 nnoremap <C-]> g<C-]>
 
@@ -83,6 +87,7 @@ cnoremap <leader>p <C-R>"
 
 let NERDTreeShowHidden = 1
 let NERDTreeIgnore = ['\.git$', '\.idea$']
+let NERDTreeWinSize = 60
 
 " let g:ctrlp_custom_ignore = '\v[\/]vendor$'
 
@@ -119,6 +124,10 @@ endfunc
 nnoremap <C-n> :call NumberToggle()<cr>
 
 let NERDTreeShowLineNumbers=1
+
+" autocmd VimEnter * NERDTree
+" autocmd BufEnter * NERDTreeMirror
+" autocmd VimEnter * wincmd w
 
 execute pathogen#infect()
 
