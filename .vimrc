@@ -78,7 +78,7 @@ nnoremap <leader>= <C-W>><CR>
 nnoremap <C-]> g<C-]>
 
 " Reload .vimrc.
-nnoremap <C-S-R> :source $MYVIMRC<CR>
+" nnoremap <C-S-R> :source $MYVIMRC<CR>
 
 " Copy yanked text into command mode.
 cnoremap <leader>p <C-R>"
