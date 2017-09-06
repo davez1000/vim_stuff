@@ -1,3 +1,6 @@
+" Make all buokmarks persistent.
+set viminfo='100,f1
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 syntax on
@@ -82,6 +85,10 @@ nnoremap <C-]> g<C-]>
 
 " Copy yanked text into command mode.
 cnoremap <leader>p <C-R>"
+
+" Map 'd' to a black hole so it doesn't cut and overwrite the register, it just deletes instead.
+nnoremap d "_d
+vnoremap d "_d
 
 " let g:ctrlp_dont_split = 'nerdtree'
 
