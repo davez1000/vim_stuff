@@ -90,8 +90,8 @@ nnoremap <leader>p "0p
 " cnoremap <leader>p <C-R>"
 
 " Map 'd' to a black hole so it doesn't cut and overwrite the register, it just deletes instead.
-nnoremap d "_d
-vnoremap d "_d
+" nnoremap d "_d
+" vnoremap d "_d
 
 " let g:ctrlp_dont_split = 'nerdtree'
 
