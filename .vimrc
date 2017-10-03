@@ -74,8 +74,11 @@ nnoremap <C-]> g<C-]>
 " Reload .vimrc.
 nnoremap <C-S-R> :source $MYVIMRC<CR>
 
+" Paste yanked text.
+nnoremap <leader>p "0p
+
 " Copy yanked text into command mode.
-cnoremap <leader>p <C-R>"
+" cnoremap <leader>p <C-R>"
 
 " let g:ctrlp_dont_split = 'nerdtree'
 
