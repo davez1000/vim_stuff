@@ -1,3 +1,6 @@
+" Make all buokmarks persistent.
+set viminfo='100,f1
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 syntax on
@@ -62,17 +65,23 @@ nnoremap <leader>,f :Ag!<CR>
 nnoremap <leader>t :tabn<CR>
 nnoremap <leader>T :tabp<CR>
 nnoremap <leader>O :tabnew<CR>
-nnoremap <leader>q :q<CR>
+nnoremap <leader>q :q!<CR>
 " Move current split pane into new tab.
 nnoremap <leader>,T <C-W><S-T>
 " Rotate current pane
 nnoremap <leader>,* <C-W>r
+" Remove highlighting from searches.
+nnoremap <leader>,n :noh<CR>
+
+" Position NERDTree window width.
+nnoremap <leader>- <C-W><<CR>
+nnoremap <leader>= <C-W>><CR>
 
 " CTAGS, pick instead of choosing first one
 nnoremap <C-]> g<C-]>
 
 " Reload .vimrc.
-nnoremap <C-S-R> :source $MYVIMRC<CR>
+" nnoremap <C-S-R> :source $MYVIMRC<CR>
 
 " Paste yanked text.
 nnoremap <leader>p "0p
@@ -80,12 +89,17 @@ nnoremap <leader>p "0p
 " Copy yanked text into command mode.
 " cnoremap <leader>p <C-R>"
 
+" Map 'd' to a black hole so it doesn't cut and overwrite the register, it just deletes instead.
+nnoremap d "_d
+vnoremap d "_d
+
 " let g:ctrlp_dont_split = 'nerdtree'
 
 let NERDTreeShowHidden = 1
 let NERDTreeIgnore = ['\.git$', '\.idea$']
+let NERDTreeWinSize = 60
 
-let g:ctrlp_custom_ignore = '\v[\/]vendor$'
+" let g:ctrlp_custom_ignore = '\v[\/]vendor$'
 
 " FZF open in tabs / splits etc.
 let g:fzf_action = {
@@ -118,6 +132,12 @@ function! NumberToggle()
   endif
 endfunc
 nnoremap <C-n> :call NumberToggle()<cr>
+
+let NERDTreeShowLineNumbers=1
+
+" autocmd VimEnter * NERDTree
+" autocmd BufEnter * NERDTreeMirror
+" autocmd VimEnter * wincmd w
 
 execute pathogen#infect()
 
